@@ -1068,3 +1068,165 @@ body { font-size: 25.2px; }
     right: 22px;
   }
 }
+
+/* Mobile layout refinement: keep the page readable and prevent overflow after the desktop readability scales. */
+@media (max-width: 760px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.55;
+    padding-bottom: 78px;
+  }
+
+  .section-wrap { width: min(100% - 32px, 560px); }
+
+  .site-header { height: 70px; padding: 0 16px; }
+
+  .site-header .brand,
+  .site-header .brand b { font-size: 14px; }
+
+  .brand-badge { width: 48px; height: 48px; flex-basis: 48px; }
+  .brand-badge .brand-logo { transform: scale(1.2); }
+  .menu-toggle { font-size: 14px; padding: 8px 0 8px 12px; }
+
+  .nav,
+  .nav-cta,
+  .button,
+  .text-link,
+  .arrow-link,
+  .footer-register { font-size: 14px; }
+
+  .nav { top: 70px; padding: 18px 16px 20px; }
+
+  .hero { gap: 34px; padding-top: 40px; padding-bottom: 50px; }
+
+  .hero h1 {
+    font-size: clamp(42px, 14vw, 58px);
+    line-height: .95;
+    margin: 22px 0 20px;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-text,
+  .intro-content p,
+  .schedule-head p,
+  .route-copy p,
+  .team-head p,
+  .payment-copy > p { font-size: 16px; line-height: 1.65; }
+
+  .hero-art {
+    height: min(430px, 112vw);
+    min-height: 300px;
+    box-shadow: 8px 8px 0 var(--lime);
+  }
+
+  .art-stamp { top: 20px; right: 18px; font-size: 15px; }
+  .art-caption { left: 18px; bottom: 18px; font-size: 9px; }
+
+  .hero-actions { flex-wrap: wrap; gap: 16px; margin-top: 26px; }
+  .button { padding: 14px 17px; }
+
+  .countdown {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .countdown strong { font-size: 25px; }
+  .countdown span,
+  .emergency-links small,
+  .person-copy small,
+  .footer-bottom { font-size: 11px; }
+
+  .date-strip { gap: 18px 12px; padding: 22px 16px; }
+  .date-strip strong { font-size: 14px; line-height: 1.35; }
+
+  .eyebrow,
+  .section-kicker,
+  .card-label,
+  .date-strip span,
+  .registration-note span,
+  .footer-contact strong { font-size: 12px; }
+
+  .intro,
+  .schedule,
+  .route,
+  .emergency { padding-top: 72px; }
+
+  .intro h2,
+  .schedule h2,
+  .payment h2,
+  .instruction-grid h2,
+  .route h2,
+  .team h2,
+  .emergency h2 { font-size: clamp(38px, 11vw, 52px); line-height: 1.02; }
+
+  .intro-content > div,
+  .schedule-head > p,
+  .team-head p,
+  .emergency-copy { margin-top: 25px; }
+
+  .intro-content .muted,
+  .distance-card p:last-child,
+  .intro-note,
+  .registration-details,
+  .registration-note p,
+  .emergency-copy > p { font-size: 14px; line-height: 1.6; }
+
+  .distances { padding-bottom: 72px; }
+  .distance-card { min-height: 205px; padding: 24px 20px; }
+  .distance-card > div { margin-left: 24px; padding-right: 22px; }
+  .distance-card h3 { font-size: 31px; }
+  .distance-card h3 i { font-size: 15px; }
+  .card-arrow { right: 20px; bottom: 18px; }
+
+  .schedule { padding-bottom: 76px; }
+  .schedule-head { margin-bottom: 36px; }
+  .timeline-item { grid-template-columns: 82px minmax(0, 1fr); gap: 14px; padding: 20px 0; }
+  .timeline-item.highlight { padding-left: 14px; }
+  .time { font-size: 17px; }
+  .timeline-item strong,
+  .emergency-links strong,
+  .person-copy strong { font-size: 15px; }
+  .timeline-item p,
+  .rules p,
+  .registration-note p,
+  .emergency-copy > p { font-size: 14px; }
+
+  .payment { padding: 40px 22px; margin-bottom: 72px; }
+  .payment:after { font-size: 120px; }
+  .registration-details { padding: 16px; }
+  .price-line { font-size: 18px; }
+  .registration-note { max-width: none; margin-top: 42px; gap: 10px 14px; }
+  .registration-note .note-number { font-size: 68px; }
+  .registration-note > span:nth-child(2) { font-size: 12px; }
+
+  .instruction-grid > div:first-child { margin-bottom: 36px; }
+  .rules > div { grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 16px 0; }
+  .rules b { font-size: 14px; }
+
+  .map-link { height: min(320px, 78vw); min-height: 240px; margin-top: 34px; }
+  .map-open { bottom: 14px; max-width: calc(100% - 28px); padding: 10px 12px; font-size: 10px; text-align: center; }
+
+  .team-grid .person { min-height: 150px; padding: 20px; }
+  .team-grid .person-visual { width: 88px; height: 88px; flex-basis: 88px; }
+  .team-grid .person-arrow { top: 18px; right: 18px; }
+
+  .emergency { padding-bottom: 72px; }
+  .emergency-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; margin-top: 30px; }
+  .emergency-links > a:last-child { grid-column: 1 / -1; }
+  .emergency-links strong,
+  .footer-contact a { overflow-wrap: anywhere; }
+
+  .footer { padding-top: 42px; }
+  .footer-inner { gap: 24px 16px; }
+  .footer-inner p,
+  .footer-contact { font-size: 13px; }
+  .footer-bottom { margin-top: 32px; padding-top: 16px; }
+}
