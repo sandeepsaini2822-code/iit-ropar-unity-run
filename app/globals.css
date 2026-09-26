@@ -1,0 +1,1070 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import '../styles.css';
+
+:root {
+  --ink: #111111;
+  --forest: #1c3559;
+  --cream: #ffffff;
+  --paper: #ffffff;
+  --lime: #55d8e8;
+  --orange: #55d8e8;
+  --muted: #707782;
+  --line: #d8d9d2;
+}
+
+.hero h1 em {
+  color: var(--muted);
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.hero h1 {
+  letter-spacing: -.025em;
+}
+
+.hero h2 span,
+.intro h2 span,
+.schedule h2 span,
+.payment h2 span,
+.instruction-grid h2 span,
+.route h2 span,
+.team h2 span,
+.emergency h2 span {
+  color: var(--muted);
+}
+
+.section-kicker {
+  color: var(--muted);
+}
+
+.payment .section-kicker,
+.emergency .section-kicker {
+  color: var(--lime);
+}
+
+body {
+  font-size: 19.75px;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+}
+
+.nav,
+.nav-cta,
+.button,
+.text-link,
+.arrow-link,
+.footer-register {
+  font-size: 15.75px;
+}
+
+.hero-text,
+.intro-content p,
+.schedule-head p,
+.route-copy p,
+.team-head p,
+.payment-copy > p {
+  font-size: 19.75px;
+  line-height: 1.8;
+}
+
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.emergency-copy > p {
+  font-size: 16.75px;
+  line-height: 1.75;
+}
+
+.date-strip strong,
+.timeline-item strong,
+.person-copy strong,
+.emergency-links strong {
+  line-height: 1.4;
+}
+
+.footer-inner p,
+.footer-contact,
+.footer-bottom {
+  line-height: 1.7;
+}
+
+.footer-inner p,
+.footer-contact {
+  font-size: 14.75px;
+}
+
+.eyebrow,
+.section-kicker,
+.card-label,
+.date-strip span,
+.registration-note span,
+.footer-contact strong {
+  font-size: 14.75px;
+}
+
+.countdown span,
+.emergency-links small,
+.person-copy small,
+.footer-bottom {
+  font-size: 13.75px;
+}
+
+.time small {
+  font-size: 14.75px;
+}
+
+.hero-date small {
+  display: inline-block;
+  margin-top: 3px;
+  font-size: 17.75px;
+  letter-spacing: .14em;
+}
+
+.hero-date > span:last-child,
+.distance-card p:last-child,
+.intro-content .muted,
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.countdown span,
+.emergency-links small,
+.person-copy small {
+  font-size: 16.75px;
+}
+
+.date-strip span,
+.registration-note span,
+.card-label,
+.section-kicker,
+.eyebrow {
+  font-size: 14.75px;
+}
+
+.countdown strong {
+  font-size: 26.75px;
+}
+
+.emergency-links strong {
+  font-size: 16.75px;
+}
+
+/* Final readability pass: supporting text only. */
+body { font-size: 21.25px; }
+.nav,
+.nav-cta,
+.button,
+.text-link,
+.arrow-link,
+.footer-register { font-size: 17.25px; }
+.hero-text,
+.intro-content p,
+.schedule-head p,
+.route-copy p,
+.team-head p,
+.payment-copy > p { font-size: 21.25px; }
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.emergency-copy > p { font-size: 18.25px; }
+.footer-inner p,
+.footer-contact { font-size: 16.25px; }
+.eyebrow,
+.section-kicker,
+.card-label,
+.date-strip span,
+.registration-note span,
+.footer-contact strong,
+.time small { font-size: 16.25px; }
+.countdown span,
+.emergency-links small,
+.person-copy small,
+.footer-bottom { font-size: 15.25px; }
+.hero-date > span:last-child,
+.distance-card p:last-child,
+.intro-content .muted { font-size: 18.25px; }
+.hero-date small { font-size: 19.25px; }
+.countdown strong { font-size: 28.25px; }
+.date-strip strong,
+.timeline-item strong,
+.emergency-links strong,
+.person-copy strong { font-size: 17.75px; }
+
+/* Small final readability adjustment for non-heading text. */
+body { font-size: 22.25px; }
+.nav,
+.nav-cta,
+.button,
+.text-link,
+.arrow-link,
+.footer-register { font-size: 18.25px; }
+.hero-text,
+.intro-content p,
+.schedule-head p,
+.route-copy p,
+.team-head p,
+.payment-copy > p { font-size: 22.25px; }
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.emergency-copy > p { font-size: 19.25px; }
+.footer-inner p,
+.footer-contact { font-size: 17.25px; }
+.eyebrow,
+.section-kicker,
+.card-label,
+.date-strip span,
+.registration-note span,
+.footer-contact strong,
+.time small { font-size: 17.25px; }
+.countdown span,
+.emergency-links small,
+.person-copy small,
+.footer-bottom { font-size: 16.25px; }
+.hero-date > span:last-child,
+.distance-card p:last-child,
+.intro-content .muted { font-size: 19.25px; }
+.hero-date small { font-size: 20.25px; }
+.countdown strong { font-size: 29.25px; }
+.date-strip strong,
+.timeline-item strong,
+.emergency-links strong,
+.person-copy strong { font-size: 18.75px; }
+
+.intro-note {
+  font-size: 19.25px;
+  line-height: 1.75;
+}
+
+.rules b {
+  font-size: 18.75px;
+  line-height: 1.3;
+}
+
+.intro h2 {
+  font-size: clamp(54px, 6.4vw, 90px);
+}
+
+.section-kicker {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.payment {
+  background: var(--forest);
+}
+
+.registration-details {
+  background: rgba(255, 255, 255, .08);
+  border-left-color: var(--lime);
+  color: #dce4eb;
+}
+
+.registration-details strong {
+  color: var(--lime);
+}
+
+.registration-details p {
+  color: #b9c5d1;
+}
+
+.registration-details b {
+  color: #ffffff;
+}
+
+.button-accent {
+  background: var(--lime);
+  color: #17324f;
+}
+
+.registration-note .note-number {
+  color: var(--lime);
+}
+
+.registration-note p {
+  color: #9eafbd;
+}
+
+.site-header {
+  background: var(--forest);
+  color: #ffffff;
+  border-bottom-color: rgba(85, 216, 232, .22);
+}
+
+.site-header .brand,
+.site-header .menu-toggle {
+  color: #ffffff;
+}
+
+.site-header .nav a:not(.nav-cta) {
+  color: #dce4eb;
+}
+
+.site-header .nav a:not(.nav-cta):hover {
+  color: var(--lime);
+  background: rgba(85, 216, 232, .12);
+}
+
+.site-header .nav-cta {
+  background: var(--lime);
+  color: #17324f;
+}
+
+.site-header .brand {
+  font-size: 22.5px;
+  line-height: 1.15;
+}
+
+.site-header .brand b {
+  font-size: 22.5px;
+}
+
+.footer .brand {
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.footer .brand b {
+  font-size: 18px;
+}
+
+.brand-wordmark {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0 16px;
+  align-items: start;
+  font-size: 22.5px;
+  line-height: 1.05;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+
+.brand-wordmark b {
+  font-size: inherit !important;
+  font-weight: 800;
+}
+
+.button,
+.nav-cta {
+  border: 1px solid rgba(255, 255, 255, .32);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 8px 22px rgba(12, 29, 53, .14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.button-dark {
+  background: rgba(16, 24, 39, .78);
+  border-color: rgba(255, 255, 255, .28);
+}
+
+.button-accent,
+.site-header .nav-cta {
+  background: rgba(85, 216, 232, .82);
+  border-color: rgba(255, 255, 255, .5);
+}
+
+.button:hover,
+.nav-cta:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4), 0 14px 30px rgba(12, 29, 53, .22);
+}
+
+.site-header .brand-logo {
+  width: 100%;
+  height: 100%;
+  flex-basis: auto;
+  object-fit: contain;
+  object-position: center;
+  padding: 0;
+}
+
+.footer .brand-logo {
+  width: 100%;
+  height: 100%;
+  flex-basis: auto;
+  object-fit: contain;
+  object-position: center;
+  padding: 0;
+}
+
+.brand-badge {
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  flex: 0 0 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.brand-badge .brand-logo {
+  transform: scale(1.35);
+}
+
+/* 20% scale-up for supporting type and content cards. */
+body { font-size: 26.7px; }
+.nav,
+.nav-cta,
+.button,
+.text-link,
+.arrow-link,
+.footer-register { font-size: 21.9px; }
+.hero-text,
+.intro-content p,
+.schedule-head p,
+.route-copy p,
+.team-head p,
+.payment-copy > p { font-size: 26.7px; }
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.emergency-copy > p { font-size: 23.1px; }
+.footer-inner p,
+.footer-contact { font-size: 20.7px; }
+.eyebrow,
+.section-kicker,
+.card-label,
+.date-strip span,
+.registration-note span,
+.footer-contact strong,
+.time small { font-size: 20.7px; }
+.countdown span,
+.emergency-links small,
+.person-copy small,
+.footer-bottom { font-size: 19.5px; }
+.hero-date > span:last-child,
+.distance-card p:last-child,
+.intro-content .muted { font-size: 23.1px; }
+.hero-date small { font-size: 24.3px; }
+.countdown strong { font-size: 35.1px; }
+.date-strip strong,
+.timeline-item strong,
+.emergency-links strong,
+.person-copy strong { font-size: 22.5px; }
+
+.distance-card {
+  min-height: 317px;
+  padding: 48px 46px;
+}
+
+.team-grid .person {
+  min-height: 312px;
+  padding: 48px;
+}
+
+.team-grid .person-visual {
+  width: 120px;
+  height: 120px;
+  flex-basis: 120px;
+}
+
+.payment {
+  padding: 84px 96px;
+}
+
+.distance-card,
+.map-link {
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.distance-card:hover,
+.map-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 34px rgba(28, 53, 89, .14);
+  border-color: var(--lime);
+}
+
+.map-link:hover .map-open {
+  background: var(--lime);
+  color: #17324f;
+}
+
+.emergency-links a,
+.footer-contact a,
+.footer-register {
+  transition: color .2s ease, transform .2s ease;
+}
+
+.emergency-links a:hover,
+.footer-contact a:hover,
+.footer-register:hover {
+  color: var(--lime);
+}
+
+.emergency-links a:hover,
+.footer-register:hover {
+  transform: translateY(-2px);
+}
+
+.hero-art .art-stamp {
+  z-index: 2;
+  padding: 12px 14px;
+  color: #ffffff;
+  background: rgba(28, 53, 89, .9);
+  border: 1px solid var(--lime);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.hero-art .art-stamp small {
+  color: var(--lime);
+}
+
+.primary-card {
+  background: var(--forest);
+  color: #ffffff;
+}
+
+.light-card {
+  background: #e8fafd;
+  color: #17324f;
+  border-color: rgba(28, 53, 89, .14);
+}
+
+.light-card .card-label,
+.light-card p:last-child {
+  color: #536475;
+}
+
+.light-card .card-arrow {
+  color: var(--forest);
+}
+
+.team-grid .person {
+  position: relative;
+  min-height: 260px;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #dbe2e8;
+  border-radius: 2px;
+  box-shadow: 0 8px 20px rgba(28, 53, 89, .06);
+  overflow: hidden;
+}
+
+.team-grid .person::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: var(--lime);
+}
+
+.team-grid .person:nth-child(3) {
+  background: var(--forest);
+  color: #ffffff;
+  border-color: var(--forest);
+}
+
+.team-grid .person-visual {
+  border: 2px solid var(--lime);
+  box-shadow: 0 0 0 5px rgba(85, 216, 232, .1);
+  width: 100px;
+  height: 100px;
+  flex-basis: 100px;
+}
+
+.team-grid .person:hover .person-visual {
+  transform: scale(1.04);
+}
+
+.team-grid .person-visual {
+  transition: transform .25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-grid .person-visual { transition: none; }
+  .team-grid .person:hover .person-visual { transform: none; }
+}
+
+@media (max-width: 760px) {
+  .team-grid .person {
+    min-height: 200px;
+    padding: 28px;
+  }
+
+  .team-grid .person-visual {
+    width: 84px;
+    height: 84px;
+    flex-basis: 84px;
+  }
+
+  .site-header .nav {
+    background: var(--forest);
+    border-bottom-color: rgba(85, 216, 232, .22);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .distance-card,
+  .map-link,
+  .emergency-links a,
+  .footer-contact a,
+  .footer-register {
+    transition: none;
+  }
+
+  .distance-card:hover,
+  .map-link:hover,
+  .emergency-links a:hover,
+  .footer-register:hover {
+    transform: none;
+  }
+}
+
+/* Keep the supplied route artwork fully visible inside the map frame. */
+.map-link img {
+  object-fit: contain;
+  object-position: center;
+  background: #dfe5d8;
+}
+
+.person-visual {
+  width: 78px;
+  height: 78px;
+  flex-basis: 78px;
+}
+
+.brand-logo {
+  width: 94px;
+  height: 52px;
+  flex: 0 0 94px;
+  object-fit: contain;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+}
+
+.timeline-item {
+  position: relative;
+  transition: background-color .25s ease, transform .25s ease, border-color .25s ease, padding-left .25s ease;
+}
+
+.timeline-item:hover {
+  background: rgba(233, 163, 59, .09);
+  border-left: 4px solid var(--orange);
+  padding-left: 22px;
+  transform: translateX(8px);
+}
+
+.timeline-item:hover .time,
+.timeline-item:hover strong {
+  color: var(--orange);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item { transition: none; }
+  .timeline-item:hover { transform: none; }
+}
+
+.cursor-follower {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity .2s ease, width .2s ease, height .2s ease;
+}
+
+.hero-art {
+  background: var(--forest);
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-image-base { object-position: center 45%; }
+
+.cursor-follower::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--lime);
+  transform: translate(-50%, -50%);
+}
+
+.cursor-follower.is-visible { opacity: .9; }
+
+@media (pointer: fine) {
+  .cursor-follower { display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-follower { display: none; }
+}
+
+.emergency-links .contact-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.emergency-links .contact-group a {
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .person-visual {
+    width: 72px;
+    height: 72px;
+    flex-basis: 72px;
+  }
+}
+
+/* Visual balance pass: keep controls and body copy readable after the scale-up. */
+body { font-size: 18px; }
+.nav,
+.nav-cta,
+.button,
+.text-link,
+.arrow-link,
+.footer-register { font-size: 14px; }
+.hero-text,
+.intro-content p,
+.schedule-head p,
+.route-copy p,
+.team-head p,
+.payment-copy > p { font-size: 18px; }
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.emergency-copy > p { font-size: 15px; }
+.footer-inner p,
+.footer-contact { font-size: 13px; }
+.eyebrow,
+.section-kicker,
+.card-label,
+.date-strip span,
+.registration-note span,
+.footer-contact strong { font-size: 14px; }
+.countdown span,
+.emergency-links small,
+.person-copy small,
+.footer-bottom { font-size: 12px; }
+.hero-date > span:last-child,
+.distance-card p:last-child,
+.intro-content .muted { font-size: 16px; }
+.hero-date small { font-size: 18px; }
+.countdown strong { font-size: 28px; }
+.date-strip strong,
+.timeline-item strong,
+.emergency-links strong,
+.person-copy strong { font-size: 16px; }
+.time small { font-size: 13px; }
+.rules b { font-size: 18px; }
+.intro-note { font-size: 18px; }
+
+.distance-card {
+  min-height: 317px;
+  padding: 48px 46px;
+}
+
+.team-grid .person {
+  min-height: 312px;
+  padding: 48px;
+}
+
+.payment { padding: 84px 96px; }
+
+.emergency-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 36px;
+  align-items: start;
+}
+
+.emergency-links .contact-group,
+.emergency-links > a {
+  min-width: 0;
+}
+
+@media (max-width: 760px) {
+  .site-header .brand,
+  .site-header .brand b {
+    font-size: 18px;
+  }
+
+  .footer .brand,
+  .footer .brand b {
+    font-size: 17px;
+  }
+
+  .brand-wordmark {
+    gap: 0 10px;
+    font-size: 18px;
+  }
+
+  .distance-card {
+    min-height: 264px;
+    padding: 28px 24px;
+  }
+
+  .payment {
+    padding: 48px 28px;
+  }
+
+  .emergency-links {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .team-grid .person-visual {
+    width: 96px;
+    height: 96px;
+    flex-basis: 96px;
+  }
+}
+
+/* Readability scale: +20% for non-heading, non-button text. */
+body { font-size: 21.6px; }
+.nav,
+.text-link,
+.arrow-link { font-size: 16.8px; }
+.hero-text,
+.intro-content p,
+.schedule-head p,
+.route-copy p,
+.team-head p,
+.payment-copy > p { font-size: 21.6px; }
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.emergency-copy > p { font-size: 18px; }
+.footer-inner p,
+.footer-contact { font-size: 15.6px; }
+.eyebrow,
+.section-kicker,
+.card-label,
+.date-strip span,
+.registration-note span,
+.footer-contact strong { font-size: 16.8px; }
+.countdown span,
+.emergency-links small,
+.person-copy small,
+.footer-bottom { font-size: 14.4px; }
+.hero-date > span:last-child,
+.distance-card p:last-child,
+.intro-content .muted { font-size: 19.2px; }
+.hero-date small { font-size: 21.6px; }
+.countdown strong { font-size: 33.6px; }
+.date-strip strong,
+.timeline-item strong,
+.emergency-links strong,
+.person-copy strong { font-size: 19.2px; }
+.time small { font-size: 15.6px; }
+.rules b,
+.intro-note { font-size: 21.6px; }
+
+/* Final readability scale: +10% for non-heading, non-button text. */
+body { font-size: 19.8px; }
+.nav,
+.text-link,
+.arrow-link { font-size: 15.4px; }
+.hero-text,
+.intro-content p,
+.schedule-head p,
+.route-copy p,
+.team-head p,
+.payment-copy > p { font-size: 19.8px; }
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.emergency-copy > p { font-size: 16.5px; }
+.footer-inner p,
+.footer-contact { font-size: 14.3px; }
+.eyebrow,
+.section-kicker,
+.card-label,
+.date-strip span,
+.registration-note span,
+.footer-contact strong { font-size: 15.4px; }
+.countdown span,
+.emergency-links small,
+.person-copy small,
+.footer-bottom { font-size: 13.2px; }
+.hero-date > span:last-child,
+.distance-card p:last-child,
+.intro-content .muted { font-size: 17.6px; }
+.hero-date small { font-size: 19.8px; }
+.countdown strong { font-size: 30.8px; }
+.date-strip strong,
+.timeline-item strong,
+.emergency-links strong,
+.person-copy strong { font-size: 17.6px; }
+.time small { font-size: 14.3px; }
+.rules b,
+.intro-note { font-size: 19.8px; }
+
+/* Final readability scale: +30% total for non-heading, non-button text. */
+body { font-size: 23.4px; }
+.nav,
+.text-link,
+.arrow-link { font-size: 18.2px; }
+.hero-text,
+.intro-content p,
+.schedule-head p,
+.route-copy p,
+.team-head p,
+.payment-copy > p { font-size: 23.4px; }
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.emergency-copy > p { font-size: 19.5px; }
+.footer-inner p,
+.footer-contact { font-size: 16.9px; }
+.eyebrow,
+.section-kicker,
+.card-label,
+.date-strip span,
+.registration-note span,
+.footer-contact strong { font-size: 18.2px; }
+.countdown span,
+.emergency-links small,
+.person-copy small,
+.footer-bottom { font-size: 15.6px; }
+.hero-date > span:last-child,
+.distance-card p:last-child,
+.intro-content .muted { font-size: 20.8px; }
+.hero-date small { font-size: 23.4px; }
+.countdown strong { font-size: 36.4px; }
+.date-strip strong,
+.timeline-item strong,
+.emergency-links strong,
+.person-copy strong { font-size: 20.8px; }
+.time small { font-size: 16.9px; }
+.rules b,
+.intro-note { font-size: 23.4px; }
+
+/* Final readability scale: +40% total for non-heading, non-button text. */
+body { font-size: 25.2px; }
+.nav,
+.text-link,
+.arrow-link { font-size: 19.6px; }
+.hero-text,
+.intro-content p,
+.schedule-head p,
+.route-copy p,
+.team-head p,
+.payment-copy > p { font-size: 25.2px; }
+.timeline-item p,
+.rules p,
+.registration-details,
+.registration-note p,
+.emergency-copy > p { font-size: 21px; }
+.footer-inner p,
+.footer-contact { font-size: 18.2px; }
+.eyebrow,
+.section-kicker,
+.card-label,
+.date-strip span,
+.registration-note span,
+.footer-contact strong { font-size: 19.6px; }
+.countdown span,
+.emergency-links small,
+.person-copy small,
+.footer-bottom { font-size: 16.8px; }
+.hero-date > span:last-child,
+.distance-card p:last-child,
+.intro-content .muted { font-size: 22.4px; }
+.hero-date small { font-size: 25.2px; }
+.countdown strong { font-size: 39.2px; }
+.date-strip strong,
+.timeline-item strong,
+.emergency-links strong,
+.person-copy strong { font-size: 22.4px; }
+.time small { font-size: 18.2px; }
+.rules b,
+.intro-note { font-size: 25.2px; }
+
+.team-grid .person-visual {
+  width: 170px;
+  height: 170px;
+  flex-basis: 170px;
+}
+
+.team-grid .person {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.team-grid .person-copy {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.team-grid .person-arrow {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+}
+
+.distance-card h3 i {
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.registration-note .note-number {
+  font-size: 96px;
+  font-family: Manrope, Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: .04em;
+  line-height: .78;
+  text-shadow: 3px 3px 0 rgba(28, 53, 89, .18);
+}
+
+.registration-note > span:nth-child(2) {
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.payment-note {
+  color: var(--lime) !important;
+  font-weight: 700;
+}
+
+.price-line {
+  display: inline-block;
+  margin-top: 5px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+@media (max-width: 760px) {
+  .team-grid .person-visual {
+    width: 132px;
+    height: 132px;
+    flex-basis: 132px;
+  }
+
+  .team-grid .person-arrow {
+    top: 22px;
+    right: 22px;
+  }
+}
